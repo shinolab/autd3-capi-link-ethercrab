@@ -1,0 +1,5 @@
+/target
+/bin
+/lib
+*.zip
+*.tar.gz
