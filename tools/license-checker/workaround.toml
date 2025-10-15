@@ -1,0 +1,95 @@
+[[dep]]
+name = "anes"
+path = "LICENSE-MIT"
+tag = "v${VERSION}"
+
+[[dep]]
+name = "ryu"
+path = "LICENSE-APACHE"
+tag = "${VERSION}"
+
+[[dep]]
+name = "atomic_enum"
+tag = "v${VERSION}"
+
+[[dep]]
+name = "embassy-time"
+path = "LICENSE-MIT"
+tag = "embassy-time-v${VERSION}"
+
+[[dep]]
+name = "embassy-time-driver"
+path = "LICENSE-MIT"
+tag = "embassy-time-driver-v${VERSION}"
+
+[[dep]]
+name = "ethercrab"
+tag = "v${VERSION}"
+
+[[dep]]
+name = "ethercrab-wire"
+tag = "v${VERSION}"
+
+[[dep]]
+name = "ethercrab-wire-derive"
+tag = "v${VERSION}"
+
+[[dep]]
+name = "void"
+path = "LICENSE-MIT"
+
+[[dep]]
+name = "windows"
+path = "license-mit"
+
+[[dep]]
+name = "windows-collections"
+path = "license-mit"
+
+[[dep]]
+name = "windows-core"
+path = "license-mit"
+
+[[dep]]
+name = "windows-future"
+path = "license-mit"
+
+[[dep]]
+name = "windows-implement"
+path = "license-mit"
+
+[[dep]]
+name = "windows-interface"
+path = "license-mit"
+
+[[dep]]
+name = "windows-link"
+path = "license-mit"
+
+[[dep]]
+name = "windows-numerics"
+path = "license-mit"
+
+[[dep]]
+name = "windows-result"
+path = "license-mit"
+
+[[dep]]
+name = "windows-strings"
+path = "license-mit"
+
+[[dep]]
+name = "windows-sys"
+path = "license-mit"
+
+[[dep]]
+name = "windows-targets"
+path = "license-mit"
+
+[[dep]]
+name = "windows-threading"
+path = "license-mit"
+
+[[dep]]
+name = "windows_x86_64_msvc"
+path = "license-mit"

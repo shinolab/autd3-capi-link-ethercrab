@@ -66,15 +66,15 @@ jobs:
             return 'autd3-capi-link-ethercrab-'+context.payload.ref.replace(/refs\/tags\//, '')+'-${{ matrix.name }}-${{ matrix.arch }}';
 
       - run: cargo make publish --features "unity"
-      - run: Compress-Archive -Path LICENSE, bin, ThirdPartyNotice.txt -DestinationPath assets-unity.zip
+      - run: Compress-Archive -Path LICENSE, bin, ThirdPartyNotices.txt -DestinationPath assets-unity.zip
         if: ${{ matrix.os == 'windows-latest' }}
-      - run: tar -zcvf assets-unity.tar.gz bin LICENSE ThirdPartyNotice.txt
+      - run: tar -zcvf assets-unity.tar.gz bin LICENSE ThirdPartyNotices.txt
         if: ${{ matrix.os != 'windows-latest'}}
         
       - run: cargo make publish
-      - run: Compress-Archive -Path LICENSE, bin, lib, ThirdPartyNotice.txt -DestinationPath assets.zip
+      - run: Compress-Archive -Path LICENSE, bin, lib, ThirdPartyNotices.txt -DestinationPath assets.zip
         if: ${{ matrix.os == 'windows-latest' }}
-      - run: tar -zcvf assets.tar.gz bin LICENSE ThirdPartyNotice.txt
+      - run: tar -zcvf assets.tar.gz bin LICENSE ThirdPartyNotices.txt
         if: ${{ matrix.os != 'windows-latest' }}
       
       - uses: actions/download-artifact@v4
