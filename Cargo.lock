@@ -60,9 +60,9 @@ dependencies = [
 
 [[package]]
 name = "autd3"
-version = "37.0.0-alpha.2"
+version = "37.0.0-alpha.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "1e69663bbb21efe928497c8eeba3bc280bb0fa79e2cfe092dcb7a2a66d2b97f1"
+checksum = "fe2ec96f5312f307e260095414fe79a27b77237c5ac39b3f94a96ed5b32ca877"
 dependencies = [
  "autd3-core",
  "autd3-driver",
@@ -71,7 +71,7 @@ dependencies = [
 
 [[package]]
 name = "autd3-capi-link-ethercrab"
-version = "37.0.0-alpha.2"
+version = "37.0.0-alpha.3"
 dependencies = [
  "autd3-link-ethercrab",
  "autd3capi-driver",
@@ -79,33 +79,33 @@ dependencies = [
 
 [[package]]
 name = "autd3-core"
-version = "37.0.0-alpha.2"
+version = "37.0.0-alpha.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "51b644544e4dcf0a28ea51721fbfc2006d7740556d15a5fa588bf0f14ee8a76e"
+checksum = "650443dbdb9e0b964306c8bb53da938a86a143b6804da0e191d85884dfe526a4"
 dependencies = [
  "autd3-derive",
 ]
 
 [[package]]
 name = "autd3-derive"
-version = "37.0.0-alpha.2"
+version = "37.0.0-alpha.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a73780d18200af8b810a95791b60d8c86a418794f1085cd0dcf7bd0bc9199618"
+checksum = "7bc301c4edce4d9c7231db6ed56021200885a131438e6272552b1eea5d53120f"
 
 [[package]]
 name = "autd3-driver"
-version = "37.0.0-alpha.2"
+version = "37.0.0-alpha.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "da80126b2137f4ff237b499e2b62e083ae707ccde4cefbddf102f042e89bf0bd"
+checksum = "78f13b6d7238692b6a997716d0aec5f3d434eecf7d8aee6148e0e46456247139"
 dependencies = [
  "autd3-core",
 ]
 
 [[package]]
 name = "autd3-firmware-emulator"
-version = "37.0.0-alpha.2"
+version = "37.0.0-alpha.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6ed422f1f9562af72478488c2307aefdda9bc2b60d0c62cbfe84cde3437e498c"
+checksum = "42ea9f4989af1cb5132854f88429aa40aa322e0ccd7a9378ec07a4f0719cfdc1"
 dependencies = [
  "autd3-core",
  "autd3-driver",
@@ -113,9 +113,9 @@ dependencies = [
 
 [[package]]
 name = "autd3-link-ethercrab"
-version = "37.0.0-alpha.2"
+version = "37.0.0-alpha.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "9707a4883d843873027c5fe00c23813dda31da3c8b7ff57a9ed3351667aed80b"
+checksum = "c43657e2eb597ca20efd3764b809b88359838970ee52a0ae7a42b220761f2ab5"
 dependencies = [
  "autd3-core",
  "cc",
@@ -127,8 +127,8 @@ dependencies = [
 
 [[package]]
 name = "autd3capi-driver"
-version = "37.0.0-alpha.2"
-source = "git+https://github.com/shinolab/autd3-capi.git#a4d92d5b56762f59462276005b16377a8d2e3a12"
+version = "37.0.0-alpha.3"
+source = "git+https://github.com/shinolab/autd3-capi.git#393d91e4fe8a8e6b8ebed2f1543c39ca9c1a8199"
 dependencies = [
  "autd3",
  "autd3-core",
