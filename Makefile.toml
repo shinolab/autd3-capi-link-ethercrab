@@ -11,9 +11,6 @@ command = "cargo"
 args = ["clean"]
 
 [tasks.check]
-dependencies = ["format", "build", "lint", "license"]
-
-[tasks.ci]
 dependencies = ["format", "build", "lint"]
 
 [tasks.build]
@@ -77,7 +74,7 @@ args = ["update"]
 [tasks.license]
 cwd = "./tools/license-checker"
 command = "cargo"
-args = ["run"]
+args = ["run", "--release"]
 dependencies = ["update"]
 
 [tasks.update-version]

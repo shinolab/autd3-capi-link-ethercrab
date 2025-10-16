@@ -42,11 +42,12 @@ jobs:
       - uses: actions/checkout@v4
       - uses: ./.github/actions/setup-build
         with:
+          os: ${{ matrix.os }}
           components: "rustfmt, clippy"
       - uses: taiki-e/install-action@v2
         with:
           tool: cargo-nextest
-      - run: cargo make ci
+      - run: cargo make check
         shell: bash
 
   all-tests-passed:

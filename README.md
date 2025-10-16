@@ -2,8 +2,8 @@
 
 ## LICENSE
 
-* See [LICENSE](./LICENSE) and [ThirdPartyNotice](./ThirdPartyNotice.txt) for more information.
+MIT
 
 # Author
 
-Shun Suzuki, 2022-2025
+Shun Suzuki, 2025
