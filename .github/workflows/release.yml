@@ -6,19 +6,7 @@ on:
     - 'v*'
 
 jobs:
-  license-check:
-    runs-on: ubuntu-latest
-    name: check-license
-    steps:
-    - uses: actions/checkout@v4
-      with:
-        submodules: true
-    - uses: ./.github/actions/setup-build
-    - run: |
-        cargo make license
-
   create-release:
-    needs: [license-check]
     name: create-github-release
     runs-on: ubuntu-latest
     steps:
@@ -54,9 +42,9 @@ jobs:
             arch: aarch64
     steps:
       - uses: actions/checkout@v4
-        with:
-          submodules: true
       - uses: ./.github/actions/setup-build
+        with:
+          os: ${{ matrix.os }}
       - id: get_version
         uses: actions/github-script@v7
         with:
@@ -64,6 +52,8 @@ jobs:
           result-encoding: string
           script: |
             return 'autd3-capi-link-ethercrab-'+context.payload.ref.replace(/refs\/tags\//, '')+'-${{ matrix.name }}-${{ matrix.arch }}';
+      
+      - run: cargo make license
 
       - run: cargo make publish --features "unity"
       - run: Compress-Archive -Path LICENSE, bin, ThirdPartyNotices.txt -DestinationPath assets-unity.zip
