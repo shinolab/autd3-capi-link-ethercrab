@@ -9,6 +9,9 @@ repository = "https://github.com/shinolab/autd3-capi-link-ethercrab"
 [lib]
 crate-type = ["cdylib"]
 
+[features]
+unity = ["autd3capi-driver/unity"]
+
 [dependencies]
 autd3capi-driver = { git = "https://github.com/shinolab/autd3-capi.git", version = "37.0.0-alpha.3", default-features = false }
 autd3-link-ethercrab = { version = "37.0.0-alpha.3", features = [], default-features = false }
