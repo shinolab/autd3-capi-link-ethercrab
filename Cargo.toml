@@ -1,6 +1,6 @@
 [package]
 name = "autd3-capi-link-ethercrab"
-version = "37.0.0"
+version = "37.0.1"
 authors = ["shun suzuki <suzuki@hapis.k.u-tokyo.ac.jp>"]
 edition = "2024"
 license = "MIT"
@@ -13,8 +13,8 @@ crate-type = ["cdylib"]
 unity = ["autd3capi-driver/unity"]
 
 [dependencies]
-autd3capi-driver = { git = "https://github.com/shinolab/autd3-capi.git", version = "37.0.0", default-features = false }
-autd3-link-ethercrab = { version = "37.0.0", features = [], default-features = false }
+autd3capi-driver = { git = "https://github.com/shinolab/autd3-capi.git", version = "37.0.1", default-features = false }
+autd3-link-ethercrab = { version = "37.0.1", features = ["tokio"], default-features = false }
 
 [profile.release]
 strip = true
