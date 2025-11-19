@@ -61,7 +61,7 @@ jobs:
 
   auto-merge:
     needs:
-      - test
+      - all-tests-passed
     permissions:
       pull-requests: write
       contents: write
